@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Nikhila-DN/Coding-bootcamp-testimonials-slider.git
-- Live Site URL: 
+- Live Site URL: https://nikhila-dn.github.io/Coding-bootcamp-testimonials-slider/
 
 ## My process
 
