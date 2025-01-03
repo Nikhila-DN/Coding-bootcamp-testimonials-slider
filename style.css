@@ -1,0 +1,159 @@
+:root {
+    --darkBlue: hsl(240, 38%, 20%);
+    --grayishBlue: hsl(240, 18%, 77%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 768px;
+    position: relative;
+    margin: 10% auto;
+}
+
+.feedback {
+    position: relative;
+    width: 90%;
+}
+
+.feedback img {
+    height: 60px;
+    position: absolute;
+    top: -40px;
+    left: 50px;
+}
+
+.feedback p {
+    font-size: 18px;
+    color: var(--darkBlue);
+    font-weight: 300;
+    line-height: 1.6rem;
+    width: 50%;
+}
+
+.name {
+    color: var(--darkBlue);
+    padding-top: 15px;
+}
+
+.role {
+    color: var(--grayishBlue);
+    padding-left: 10px;
+}
+
+.slider-container .image img{
+    width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.slider-container {
+    position: absolute;
+    left: 50%;
+    right: -30%;
+}
+
+.slider-bg{
+    position: absolute;
+    top: -3rem;
+    z-index: -1;
+    width: 80%;
+    left: -6%;
+}
+
+.curve{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+}
+
+.navigation {
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+}
+
+.navigation img {
+    cursor: pointer;
+    padding: 8px 10px 5px 10px;
+}
+
+@media (max-width: 800px) {
+
+    body{
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 350px;
+        margin: 20% auto !important;
+    }
+
+    .feedback {
+        text-align: center;
+        margin-top: 7rem;
+    }
+
+    .feedback p{
+        width: 100%;
+    }
+
+    .curve{
+        width: 80vh;
+        bottom: -30%;
+    }
+
+    .feedback img {
+        left: 40%;
+    }
+    .role {
+        display: block;
+    }
+
+    .navigation {
+        left: 40%;
+        bottom: -3%;
+    }
+
+    .slider-container {
+        position:relative;
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 80%;
+    }
+
+    .slider-container .image img{
+        width: 100%;
+    }
+    .slider-bg {
+        position: absolute;
+        top: -3rem;
+        z-index: -1;
+        width: 132%;
+        left: -13%;
+    } 
+}
+
